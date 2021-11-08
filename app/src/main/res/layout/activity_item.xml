@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stayroom_bg2"
+    android:orientation="vertical"
+    tools:context=".ItemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/stayroom_title"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/activity_item_roomname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/scdream"
+            android:text="FATE OF CARD"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="45dp" /><!--ts:20-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="0.8"
+        android:background="@drawable/stayroom_player"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/activity_item_player1_bg"
+            android:layout_width="192.2dp"
+            android:layout_height="272.8dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/choose_bg2"
+            android:gravity="center"
+
+            android:orientation="vertical"><!--W:124 h:176-->
+            <TextView
+                android:id="@+id/activity_item_player1_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/scdream"
+                android:text="닉네임"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="45dp" /><!--ts:30-->
+            <TextView
+                android:id="@+id/activity_item_player1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/scdream"
+                android:text="첫번째"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="55dp" /><!--ts:35-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_item_player2_bg"
+            android:layout_width="192.2dp"
+            android:layout_height="272.8dp"
+            android:layout_marginVertical="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+
+            android:background="@drawable/card_back"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/activity_item_player2_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/scdream"
+                android:text="닉네임"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="45dp"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/activity_item_player2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/scdream"
+                android:text="두번째"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="55dp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="30dp"
+        android:layout_weight="0.6"
+        android:background="@drawable/stayroom_itembg"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:text="시작 아이템"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" /><!--ts:15-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.43"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/activity_item_startitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_help" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/item_startbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stayroom_press6"
+
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:text="게임 중 사용 아이템"
+                    android:textAlignment="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.43"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/activity_item_gameitem"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/main_help" />
+
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/item_gamebtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="60dp"
+                    android:layout_marginVertical="2dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/stayroom_press6" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/stayroom_itemlist"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="35dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/item_allcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_allcard" />
+
+                <ImageButton
+                    android:id="@+id/item_allplayer"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_allplayer" />
+
+                <ImageButton
+                    android:id="@+id/item_double"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_double" />
+
+                <ImageButton
+                    android:id="@+id/item_addcard"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_addcard" />
+
+                <ImageButton
+                    android:id="@+id/item_defence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_defence" />
+
+                <ImageButton
+                    android:id="@+id/item_glence"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/item_glence" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right|top">
+
+        <ImageButton
+            android:id="@+id/item_play"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginRight="40dp"
+            android:adjustViewBounds="true"
+            android:background="@android:color/transparent"
+            android:scaleType="fitXY"
+            android:src="@drawable/stayroom_play" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

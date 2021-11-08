@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3"
+        android:background="@drawable/play_bgtop"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/player1"
+                android:layout_width="124dp"
+                android:layout_height="176dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/card_back"
+                android:gravity="center"
+
+                ><!--w:62 h:88-->
+                <TextView
+                    android:id="@+id/cardnum1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/scdream"
+                    android:text="15"
+                    android:textSize="55dp"
+                    android:textStyle="bold" /><!--ts:25-->
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/forcards"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_toEndOf="@id/player1"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/login_login"
+                android:visibility="invisible" />
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:splitMotionEvents="false">
+
+            <LinearLayout
+                android:id="@+id/player2"
+                android:layout_width="62dp"
+                android:layout_height="88dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/card_back"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/cardnum2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/blackhansans"
+                    android:text="15"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/card"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/card_heart1" />
+
+            <ImageButton
+                android:id="@+id/cardraw"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:scaleType="fitXY"
+                android:src="@drawable/card_back" />
+
+            <LinearLayout
+                android:id="@+id/player3"
+                android:layout_width="62dp"
+                android:layout_height="88dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/card_back"
+                android:gravity="center"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/cardnum3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/blackhansans"
+                    android:text="15"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="53dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_weight="0.5">
+
+                    <ImageButton
+                        android:id="@+id/activity_play_startitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/item_none" />
+
+                    <ImageButton
+                        android:id="@+id/activity_play_gameitem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/item_none" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:gravity="right|bottom"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/turnname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginRight="53dp"
+                        android:fontFamily="@font/blackhansans"
+                        android:text="@string/turnname"
+
+                        android:textSize="40dp" />
+
+                    <TextView
+                        android:id="@+id/stacking"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginVertical="10dp"
+                        android:layout_marginRight="53dp"
+                        android:fontFamily="@font/blackhansans"
+                        android:text="@string/stackcard"
+
+                        android:textSize="40dp" /><!--mr:23 mv: 10 ts:10-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/play_bgbottom"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/carddeck"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/play_deck"
+                android:scrollbars="horizontal"
+
+                >
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

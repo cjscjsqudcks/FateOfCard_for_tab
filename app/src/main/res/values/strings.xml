@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Fate Of Card</string>
+    <string name="stackcard">PENALTY : %1$d 장</string>
+    <string name="nickname">닉네임 : %1$s 님</string>
+    <string name="turnname"> 차례 : %1$s </string>
+</resources>
